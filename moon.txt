@@ -1,6 +1,0 @@
-<<<<<<< HEAD
-De-Centralized model을 통한 연습
-Project Repository에 git을 Fork하겠습니다.
-=======
-De-Centralized model을 통한 깃 연습:
->>>>>>> mybranch
