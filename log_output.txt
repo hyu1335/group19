@@ -1,3 +1,5 @@
+moongi Sat Apr 30 15:19:12 2022 +0900 usecase 작성 및 UI_design-구매 5b515b0
+moongi Sat Apr 30 15:14:51 2022 +0900  actor description 및 use case description 생성 a4bd442
 moongi Sat Apr 30 15:06:59 2022 +0900 requirement list 구매 추가 60ff413
 moongi Sat Apr 30 15:03:07 2022 +0900 log f55e17b
 moongi Sat Apr 30 14:55:11 2022 +0900 log_output 생성 105f89f
