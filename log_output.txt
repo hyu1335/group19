@@ -1,0 +1,18 @@
+moongi Sat Apr 30 15:19:12 2022 +0900 usecase 작성 및 UI_design-구매 5b515b0
+moongi Sat Apr 30 15:14:51 2022 +0900  actor description 및 use case description 생성 a4bd442
+moongi Sat Apr 30 15:06:59 2022 +0900 requirement list 구매 추가 60ff413
+moongi Sat Apr 30 15:03:07 2022 +0900 log f55e17b
+moongi Sat Apr 30 14:55:11 2022 +0900 log_output 생성 105f89f
+moongi Sat Apr 30 14:32:15 2022 +0900 B711232 정문기 32de882
+hyu1335 Sat Apr 30 11:34:14 2022 +0900 Delete usecase.jpg 58145d4
+hyu1335 Sat Apr 30 11:34:05 2022 +0900 Merge branch 'master' of https://github.com/hyu1335/group19 6643454
+hyu1335 Sat Apr 30 11:33:52 2022 +0900 requirement list 및 actor/use case description ef2312f
+hyu1335 Sat Apr 30 11:31:33 2022 +0900 Delete moon.txt a295c62
+hyu1335 Sat Apr 30 11:30:10 2022 +0900 Merge branch 'master' of https://github.com/hyu1335/group19 1260ac3
+hyu1335 Sat Apr 30 11:27:33 2022 +0900 requirement list 및 actor/use case description 63a1588
+hyu1335 Sat Apr 30 10:02:14 2022 +0900 Delete se1.c 31e2ecf
+Jeong Moon Gi Fri Apr 22 21:00:41 2022 +0900 Merge pull request #1 from wjdansrl7/master b512f03
+moongi Fri Apr 22 20:57:01 2022 +0900 Merge branch 'mybranch' 7f9f85a
+moongi Fri Apr 22 20:54:16 2022 +0900 연습용 21b9fb7
+moongi Fri Apr 22 20:53:01 2022 +0900 moon 2cedbf8
+hyu1335 Fri Apr 22 18:56:35 2022 +0900 첫번째 ebdcb47
