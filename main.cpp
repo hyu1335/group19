@@ -1,4 +1,4 @@
-﻿#include "Shoppingsite1.h"
+﻿#include "Shoppingsite.h"
 using namespace std;
 
 #pragma region doTask
@@ -11,7 +11,7 @@ void doTask()
 	while (!is_program_exit)
 	{
 		fin >> menu_level_1 >> menu_level_2;
-		cout << menu_level_1 << menu_level_2 << " ";
+		cout << menu_level_1 << menu_level_2 << endl;
 		switch (menu_level_1)
 		{
 		case 1:

@@ -1104,9 +1104,9 @@ void SaleItem::addScore(string productName, int satisfaction, EvaluateItemUI *pE
 			fout << endl;
 			return;
 		}
-		cout << "사용자 입력한 상품명의 상품이 없습니다." << endl;
-		fout << "4.4. 상품 구매만족도 평가" << endl;
-		fout << "> " << endl;
-		fout << endl;
 	}
+	cout << "사용자 입력한 상품명의 상품이 없습니다." << endl;
+	fout << "4.4. 상품 구매만족도 평가" << endl;
+	fout << "> " << endl;
+	fout << endl;
 }
