@@ -821,11 +821,12 @@ private:
 	Purchase *pPurchase;
 	string productName;
 	char sellerID[20];
+	bool isPurchased;
 
 public:
 	PurchaseUI(Purchase *purchase);
 	void getProductName();
-	void setPurchaseUIAttr(char[20], string);
+	void setPurchaseUIAttr(char[20], string, bool);
 	void printPurchaseUI();
 };
 
@@ -865,17 +866,21 @@ void PurchaseUI::getProductName()
 	pPurchase->handleItem(selectedItem);
 }
 
-void PurchaseUI::setPurchaseUIAttr(char chArr[20], string str)
+void PurchaseUI::setPurchaseUIAttr(char chArr[20], string str, bool TF)
 {
 	strcpy(sellerID, chArr);
 	productName = str;
+	isPurchased = true;
 }
 
 void PurchaseUI::printPurchaseUI()
 {
-	fout << "4.2. 상품 구매" << endl;
-	fout << "> " << sellerID << " " << productName << endl;
-	fout << endl;
+	if (isPurchased)
+	{
+		fout << "4.2. 상품 구매" << endl;
+		fout << "> " << sellerID << " " << productName << endl;
+		fout << endl;
+	}
 }
 
 void Purchase::handleItem(string productName)
@@ -894,7 +899,14 @@ void SaleItem::processingPurchase(char chArr[20], string str, PurchaseUI *pPurch
 			{
 				strcpy(SellingItemList[i].buyerID, chArr); // 조회한 상품에 대한 구매처리
 				SellingItemList[i].leftItem -= 1;
-				pPurchaseUI->setPurchaseUIAttr(SellingItemList[i].sellerID, SellingItemList[i].productName); // UI의 attr 설정
+				pPurchaseUI->setPurchaseUIAttr(SellingItemList[i].sellerID, SellingItemList[i].productName, true); // UI의 attr 설정
+			}
+			else if (strcmp(SellingItemList[i].buyerID, chArr) == 0)
+			{	
+				cout << "이미 구매한 상품입니다." << endl;
+				fout << "4.2. 상품 구매" << endl;
+				fout << "> " << endl;
+				fout << endl;
 			}
 		}
 	}
