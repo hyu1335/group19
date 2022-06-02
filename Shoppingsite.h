@@ -556,7 +556,7 @@ class SearchSoldOutItemUI // 3.3 판매 완료 상품 조회 UI
 
     static bool cmp(const SoldItemInfo &a, const SoldItemInfo &b)
     {
-        return a.productName < b.productName; // 이름에 대한 정렬
+        return a.productName < b.productName;
     }
 
 private:
@@ -635,27 +635,10 @@ void SearchSoldOutItem::SearchSoldOutItemWork()
 {
     pSearchSoldOutItemUI = new SearchSoldOutItemUI(this);
     pSaleItem = new SaleItem;
-    // pSaleItem->getSoldOutItemDetails(pSearchSoldOutItemUI);
     pSaleItem->listSoldItem(pSearchSoldOutItemUI);
     pSearchSoldOutItemUI->sortItem();
     pSearchSoldOutItemUI->startinterface();
 }
-/*
-void SaleItem::getSoldOutItemDetails(SearchSoldOutItemUI *searchSoldOutItemUI)
-{
-    fout << "3.3. 판매 완료 상품 조회" << endl;
-
-    for (int i = 0; i < MAX_NUMBER_OF_SALEITEM; i++)
-    {
-
-        if (SellingItemList[i].check == 1 && SellingItemList[i].leftItem == 0 && equal(logInedID, SellingItemList[i].sellerID, 20))
-        {
-            this->listSoldItem(searchSoldOutItemUI);
-            searchSoldOutItemUI->sortItem();
-        }
-    }
-}
-*/
 
 #pragma region PrintTotalSales
 class PrintTotalSales;
